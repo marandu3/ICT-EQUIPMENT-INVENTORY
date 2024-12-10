@@ -1,0 +1,151 @@
+body{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    color:white;
+}
+#navmsg {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+#loginpagenav {
+    background-color: #205A28;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 90%;
+    height: 50px;
+    align-content: center;
+    border-radius: 20px;
+    padding: 0 20px;
+  }
+
+#formcontainer{
+    display:flex;
+    align-self:center;
+    transform:translateY(-15px);
+    justify-content: center;
+    background-color: #205A28;
+    padding:20px;
+    width:50%;
+    height:auto;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.button{
+    text-align: center;
+}
+
+input{
+    width:65%;
+    height:1.8em;
+    text-align: center;
+    border-radius:10px;
+}
+
+#login{
+    transform:translateX(28px);
+    border-radius:28px;
+    background: #C72B32;
+    color:white;
+}
+
+#login:hover{
+    cursor:pointer;
+    background-color:rgb(41, 25, 26);
+    
+}
+
+#password,#username{
+    width: 210px;
+}
+
+#password{
+    width:214px;
+}
+
+.footer{
+    background-color: #205A28;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+}
+
+#cpassword{
+    width: 155px;
+}
+
+#logout {
+    float: right;
+    border-radius: 15px;
+    background-color: #C72B32;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    
+  }
+
+#logout:hover{
+    background-color: rgb(41, 25, 26);
+    cursor:pointer;
+    
+}
+
+@media (max-width:600px){
+    #formcontainer{
+        height:250px;
+        overflow: scroll;
+        border-radius: 20px;
+        padding:30px;
+        padding-top:40px;
+        text-align: center;
+    }
+    
+    #login{
+        transform:translateX(0px);
+        border-radius:28px;
+        background: #C72B32;
+        color:white;
+    }
+
+    #loginpagenav {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 65px;
+    }
+
+    #navmsg {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    #logout, #setting, #home {
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        text-align: center;
+    }
+
+    #buttonscont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #admin {
+        width: 100%;
+        max-width: 170px;
+        margin: 10px 0;
+    }
+
+
+
+}
