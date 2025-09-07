@@ -3,6 +3,7 @@ if(isset($_POST["login"])){
     include("connection.php");
     $username=$_POST["username"];
     $password=$_POST["password"];
+    
 
     $username=stripcslashes($username);
     $password=stripcslashes($password);
@@ -91,3 +92,4 @@ if(isset($_POST["login"])){
     </footer>
 </body>
 </html>
+
