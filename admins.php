@@ -7,6 +7,7 @@ if(!isset($_SESSION["username"])){
     include"navbarall.php";
     
  if(isset($_POST["logout"])){
+     
     session_destroy();
     header("location:index.php");
  }
@@ -44,3 +45,4 @@ if(!isset($_SESSION["username"])){
         <p>Copyright&nbsp;&copy; Field Students RAS SINGIDA 2024</p>
     </footer>
 </body>
+
